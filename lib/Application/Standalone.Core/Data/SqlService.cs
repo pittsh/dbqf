@@ -19,6 +19,7 @@ namespace Standalone.Core.Data
         protected string _connectionString;
         public SqlService(IMatrixConfiguration configuration, string connectionString)
         {
+            Console.WriteLine($"got connection string {connectionString}");
             _config = configuration;
             _connectionString = connectionString;
         }
